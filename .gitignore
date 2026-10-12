@@ -1,0 +1,9 @@
+# La clave de Gemini no se sube nunca
+.env
+
+# Archivos que genera Python, ADK y el entorno virtual
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.adk/
