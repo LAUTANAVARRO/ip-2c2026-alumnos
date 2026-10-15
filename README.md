@@ -148,17 +148,18 @@ Cada horario es una lista con 14 datos: código, materia, comisión, fecha de in
 
 ### 📝 ¿Qué voy a ver al iniciar la app?
 
-- Al abrir ```http://127.0.0.1:8000``` y elegir ```sarmi```, verás el chat a la derecha y, a la izquierda, el panel de **eventos**: ahí se ve qué herramienta eligió el modelo, con qué datos la llamó y qué le devolvió. **Es la mejor forma de entender qué está pasando y de encontrar errores.**
+- Al principio, como las funciones obligatorias están vacías, SarmIA saluda bien pero responde que no encuentra ninguna materia. **Las capturas de esta sección muestran ese estado inicial.**
+- Al abrir ```http://127.0.0.1:8000``` y elegir ```sarmi```, a la derecha está el chat y, a la izquierda, el panel de **eventos**: ahí se ve qué herramienta eligió el modelo, con qué datos la llamó y qué le devolvió. **Es la mejor forma de entender qué está pasando y de encontrar errores.**
 
 ![Interfaz de ADK: el chat a la derecha y el panel de eventos a la izquierda](imagenes/interfaz-adk.png)
 
-- Al hacer clic en un evento se ve el detalle de la llamada a la herramienta: el nombre, los datos con los que la llamó el modelo y la respuesta.
+- Al hacer clic en un evento se ve el detalle: con qué datos llamó el modelo a la herramienta...
 
 ![Detalle de la llamada a consultarMateria](imagenes/evento-herramienta.png)
 
-- Al principio, como las funciones obligatorias están vacías, SarmIA saluda bien pero responde que no encuentra ninguna materia.
+- ...y qué le respondió. Acá la respuesta es ```materiaNoEncontrada```, porque ```buscarMateria``` todavía está vacía.
 
-![SarmIA sin las funciones completas: no encuentra la materia](imagenes/sarmi-sin-funciones.png)
+![Respuesta de consultarMateria con las funciones sin completar](imagenes/sarmi-sin-funciones.png)
 
 ### 📝 Lo que falta hacer (OBLIGATORIO)
 
