@@ -8,7 +8,7 @@ def normalizar(texto):
     Ejemplo: normalizar("Introducción a la PROGRAMACIÓN") devuelve "introduccion a la programacion"."""
     texto = texto.lower()
 
-   reemplazos = {
+    reemplazos = {
         'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
         'Á': 'a', 'É': 'e', 'Í': 'i', 'Ó': 'o', 'Ú': 'u',
         'ü': 'u', 'Ü': 'u'
@@ -16,7 +16,7 @@ def normalizar(texto):
 
     for letra_con_tilde, letra_sin_tilde in reemplazos.items():
         texto = texto.replace(letra_con_tilde, letra_sin_tilde)
-        
+
     return texto
 
 
